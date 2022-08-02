@@ -18,3 +18,19 @@
 ## Big O Notation Cheat Sheet
 
 ![MarineGEO circle logo](/assets/big-o-notation.jpeg "Big-O")
+
+## Time Complexity ...
+- The time complexity of the algorithm is the amount of time that an algorithm will take to execute
+on a computer system to produce the output. 
+- The aim of analyzing the time complexity of the
+algorithm is to determine, for a given problem and more than one algorithm, which one of the
+algorithms is the most efficient with respect to the time required to execute.
+
+## Rules of the Big O
+1. If you have 2 steps in your algorithm you add the steps. eg *Step 1 == O(a) && O(b)* which becomes *O(a+b)*
+2. Drop contants. 
+3. If you have different inputs then you have different var to represent them. 
+    - Big o is an equation of how the runtime changes/scales, so it becomes *O(a***b)*
+4. Drop none dominant terms. 
+
+**Reference** ==> [Big O Notation](https://www.youtube.com/watch?v=v4cd1O4zkGw&ab_channel=HackerRank) by HackerRank
