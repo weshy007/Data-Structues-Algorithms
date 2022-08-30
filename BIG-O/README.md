@@ -33,8 +33,15 @@ algorithms is the most efficient with respect to the time required to execute.
     - Big o is an equation of how the runtime changes/scales, so it becomes *O(a***b)*
 4. Drop none dominant terms. 
 
-**Reference** ==> [Big O Notation](https://www.youtube.com/watch?v=v4cd1O4zkGw&ab_channel=HackerRank) by HackerRank
+**Reference** 
 
+==> [Big O Notation](https://www.youtube.com/watch?v=v4cd1O4zkGw&ab_channel=HackerRank) by HackerRank. :point_up_2:
+
+==>[Big O Notation - Full Course
+](https://www.youtube.com/watch?v=Mo4vesaut8g&t=199s&ab_channel=freeCodeCamp.org) by freecodecamp.org :point_down:
+
+- You learn and understand how to apply the concepts of Big O Notation to Software Engineering. 
+    - Remember, Big-O notation is a way to describe how long an algorithm takes to run or how much memory is used by an algorithm. 
 ## Orders of Growth in O-Notations
 | Step| Growth |
 | --- | --- |
@@ -50,7 +57,6 @@ algorithms is the most efficient with respect to the time required to execute.
 
     
     NB
-    - In  bold, the ones in this template.
     - Showing from good to bad.
 
 </br>
@@ -80,7 +86,7 @@ algorithms is the most efficient with respect to the time required to execute.
 - Iterate through the first for loop and for **each** iteration in the first loop, you iterate in the nested loop, and for **each** iteration in the 1st nested loop, you iterate in the 2nd loop.
 
     - If we call the function cube() with 4 as the parameter, we get to console 3 indexes/dimensions. ie i, j and k. Lets take them as columns, rows and height.
-    - When we start at *i=0*, we go for *j=0*, then go for *k=0 *k=1*, *k=2* & *k=3* respectively.
+    - When we start at *i=0*, we go for *j=0*, then go for *k=0*, *k=1*, *k=2* & *k=3* respectively.
     - We then go for *j=1* then *k=0*, *k=1*, *k=2* and *k=3*. 
         - The reason why we go back to j=1 is because we have not finished iteration in the 1st nested loop.
     - We then go for *j=2* then *k=0*, *k=1*, *k=2* and *k=3* again. This goes on till you finish all the iterations(64).
@@ -125,3 +131,48 @@ Here is our function
 
 <br>
 <br>
+
+## O(log n) What Is Binary Search?
+- Also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. 
+- We need to undertsand that for this to work, the array must be an ordered array. Both descending and ascending (sorted) arrays will work.
+- For the coiding binary search, refer [here](https://youtu.be/Mo4vesaut8g?t=2168)
+
+
+<br>
+<br>
+
+
+## O(n log n) Explanation
+![MarineGEO circle logo](/assets/nlognex.png "Big-O")
+
+- The function take one argument n(4).
+    - We then declared a variable y(*Will be used in the for loop so that we can iterate through the original size of n*).
+- The while loop iterates though n till n == 1.
+- For every iteration in the top level loop, which iterates through n till its 1, n is divided by 2. The value of n is split into two.
+- Process time increases linearly with the size of n.
+
+![MarineGEO circle logo](/assets/nlognexcomplete.png "Big-O")
+
+
+<br>
+<br>
+
+
+## O(2^n) Explanation With Fibonacci
+
+<br>
+<br>
+
+## O(n!) Explanation
+
+<br>
+<br>
+
+## Space Complexity & Common Mistakes
+
+<br>
+<br>
+
+
+<u><b> INFORMATIVE RESOURSE </b></u>
+- Check out this [link](https://www.bigocheatsheet.com/ 'Big-O cheats') for the Big-O cheatsheet.
